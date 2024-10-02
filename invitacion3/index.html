@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <!-- Estilos personalizados -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .menu {
+        background-color: #8c52ff;
+        }
+
+        .color-morado {
+        color: #8c52ff;
+        }
+
+        .titulos {
+            font-family: "Berkshire Swash", serif;
+            text-align: center;
+        }
+        .nombre {
+            font-size: 8rem;
+        }
+
+        .fondo-lula {
+        background: #8c52ff;
+        color: white
+        }
+
+        /* Estilos para las secciones */
+        section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            padding: 40px 20px;
+        }
+        
+        #inicio {
+            background-color: #21085592;
+            color: white;
+        }
+
+        #sobre-mi {
+            background-color: #21085592;
+            color: white;
+        }
+
+        #contador {
+            background-color: #21085592;
+            color: white;
+        }
+
+        #contacto {
+            background-color: #21085592;
+            color: white;
+        }
+
+        /* Para el navbar */
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Para evitar que el menú oculte contenido */
+        .spacer {
+            height: 50px; /* Ajusta esto según la altura de tu navbar */
+        }
+
+        /* Video de fondo */
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajusta el video para cubrir toda la pantalla */
+            z-index: -1; /* Coloca el video detrás de otros elementos */
+            }
+
+            audio {
+                position: fixed;
+                top: 15%;
+                right: 10px;
+                z-index: 999;
+                opacity: 0.5; /* Ajusta la opacidad según tu gusto */
+            }
+
+        /* Estilo del botón flotante de volver arriba */
+        #btnVolverArriba {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #8c52ff;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            z-index: 9999;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #btnVolverArriba:hover {
+            background-color: #6a3fcc;
+        }
+    </style>
+</head>
+<body>
+    <audio controls autoplay loop preload="metadata">
+        <source src="audio/cancion.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Menú de navegación responsivo -->
+    <nav class="navbar navbar-expand-xs navbar-dark menu">
+        <div class="container-fluid">
+            <a class="navbar-brand brand" href="#">
+                <img src="images/brand.png" class="img-fluid" alt="Bootstrap" width="300">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contador">Contador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer para evitar que el contenido se oculte detrás del navbar -->
+    <div class="spacer"></div>
+
+    <!-- Sección 1: Inicio -->
+    <section id="inicio" class=" d-flex flex-column ">
+        <video autoplay loop muted style="width: 100%; height: 100%;">
+            <source src="video/video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <h1 class="titulos nombre mb-5 animate__animated animate__bounce animate__slow" >Lul@ Fest</h1>
+        <h2 class="titulos display-2 mb-4 animate__animated animate__bounce animate__slow ">09 Noviembre 2024</h2>
+        <h2 class="titulos display-2 mb-4 animate__animated animate__bounce  animate__slow">¡Te invitamos a celebrar con nosotros!</h2>
+    </section>
+
+    <!-- Sección 2: Sobre mí -->
+    <section id="sobre-mi" class="animate__animated">
+        <h2>Sobre mí</h2>
+        <p>Un poquito de historia sobre el cumpleañero.</p>
+    </section>
+
+    <!-- Sección 3: Contador -->
+    <section id="contador" class="animate__animated">
+        <div class="container text-center">
+            <h2>Cuenta Regresiva</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="days" class="display-4">00</h2>
+                            <p>Días</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="hours" class="display-4">00</h2>
+                            <p>Horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="minutes" class="display-4">00</h2>
+                            <p>Minutos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="seconds" class="display-4">00</h2>
+                            <p>Segundos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Contacto -->
+    <section id="contacto" class="animate__animated">
+        <h2>Contacto</h2>
+        <p>Déjame un mensaje o ponte en contacto conmigo aquí.</p>
+    </section>
+
+    <!-- Botón flotante de volver arriba -->
+    <button id="btnVolverArriba" onclick="scrollToTop()">&#8679;</button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Contador JavaScript -->
+    <script>
+        // Fecha de destino (ejemplo: Año Nuevo)
+        var countDownDate = new Date("Nov 09, 2024 16:30:00").getTime();
+
+        // Actualizar el contador cada segundo
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            // Cálculos de tiempo
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Mostrar resultados
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // Si la cuenta termina
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+                alert("¡El tiempo ha terminado!");
+            }
+        }, 1000);
+    </script>
+
+    <!-- Función para mostrar el botón flotante cuando haces scroll -->
+    <script>
+        window.onscroll = function() {
+            var btnVolverArriba = document.getElementById("btnVolverArriba");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btnVolverArriba.style.display = "block";
+            } else {
+                btnVolverArriba.style.display = "none";
+            }
+        };
+
+        // Función para volver al inicio
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+    <!-- Animaciones con Intersection Observer -->
+    <script>
+        // Selección de secciones animadas
+        const sections = document.querySelectorAll('section');
+
+        // Intersection Observer para animar las secciones
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__fadeInUp');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        // Observar cada sección
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
