@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="estilos.css">
+    <script src="todos.js"></script>
+</head>
+<body>
+    <audio controls autoplay loop preload="metadata">
+        <source src="audio/pretty-woman.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Menú de navegación responsivo -->
+    <nav class="navbar navbar-expand-xs navbar-dark menu">
+        <div class="container-fluid">
+            <a class="navbar-brand brand" href="#">
+                <img src="images/brand.png" class="img-fluid" alt="Bootstrap" width="250">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link color-navegacion fs-3" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navegacion fs-3" href="#mis-40">Mis 40</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navegacion fs-3" href="#ubicacion">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navegacion fs-3" href="#confirmacion">Confirmación</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer para evitar que el contenido se oculte detrás del navbar -->
+    <div class="spacer"></div>
+
+    <!-- Sección 1: Inicio -->
+    <section id="inicio" class="d-flex flex-column">
+        <video autoplay loop muted style="width: 100%; height: 100%;">
+            <source src="video/video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="textos">
+            <h1 class="titulos nombre mb-3 neon-morado animate__animated animate__pulse animate__infinite infinite" >Lul@ Fest</h1>
+            <h2 class="titulos display-2 mb-2 neon-morado animate__animated animate__pulse animate__infinite infinite">09 Noviembre 2024</h2>
+            <h2 class="titulos display-2 mb-2 neon-morado animate__animated animate__pulse animate__infinite infinite">¡Te invito a celebrar conmigo!</h2>
+        </div>
+        <div class="arrow">
+            <a href="#mis-40">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M12 1.993C6.486 1.994 2 6.48 2 11.994c0 5.513 4.486 9.999 10 10 5.514 0 10-4.486 10-10s-4.485-10-10-10.001zm0 18.001c-4.411-.001-8-3.59-8-8 0-4.411 3.589-8 8-8.001 4.411.001 8 3.59 8 8.001s-3.589 8-8 8z"></path><path d="M13 8h-2v4H7.991l4.005 4.005L16 12h-3z"></path></svg> 
+            </a> 
+            <a href="#mis-40"><span class="text-white fw-bold text-decoration-none"> Presiona aquí</span></a>
+        </div>
+    </section>
+
+    <!-- Sección 2: Mis 40 -->
+    <section id="mis-40" class="d-flex flex-column">
+        <div class="textos">
+            <p class="titulos nombre2 neon-morado animate__animated animate__shakeX animate__slower animate__infinite infinite">No tengo</p>
+            <p class="text-center nombre3 neon-morado animate__animated animate__jackInTheBox animate__slower animate__infinite infinite">40</p>
+            <p class="titulos nombre2 neon-morado animate__animated animate__zoomInDown animate__slower ">¡Tengo 18, con 22 años de experiencia!</p>
+        </div>
+        <div class="arrow">
+            <a href="#mis-40">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M12 1.993C6.486 1.994 2 6.48 2 11.994c0 5.513 4.486 9.999 10 10 5.514 0 10-4.486 10-10s-4.485-10-10-10.001zm0 18.001c-4.411-.001-8-3.59-8-8 0-4.411 3.589-8 8-8.001 4.411.001 8 3.59 8 8.001s-3.589 8-8 8z"></path><path d="M13 8h-2v4H7.991l4.005 4.005L16 12h-3z"></path></svg> 
+            </a> 
+            <a href="#mis-40"><span class="text-white fw-bold text-decoration-none"> Presiona aquí</span></a>
+        </div>
+        
+    </section>
+
+    <!-- Sección 3: Contador -->
+    <section id="contador" class="hidden">
+        <div class="container text-center">
+            <h2>Cuenta Regresiva</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="days" class="display-4">00</h2>
+                            <p>Días</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="hours" class="display-4">00</h2>
+                            <p>Horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="minutes" class="display-4">00</h2>
+                            <p>Minutos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 id="seconds" class="display-4">00</h2>
+                            <p>Segundos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Ubicacion -->
+    <section id="ubicacion" class="animate__animated">
+        <h2>Contacto</h2>
+        <p>Déjame un mensaje o ponte en contacto conmigo aquí.</p>
+    </section>
+    
+    <!-- Sección 4: Confirmacion -->
+    <section id="confirmacion" class="animate__animated">
+        <h2>Contacto</h2>
+        <p>Déjame un mensaje o ponte en contacto conmigo aquí.</p>
+    </section>
+
+    <!-- Botón flotante de volver arriba -->
+    <button id="btnVolverArriba" onclick="scrollToTop()">&#8679;</button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
