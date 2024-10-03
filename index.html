@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="estilos.css">
+    <script src="todos.js"></script>
+</head>
+<body>
+    <audio controls autoplay loop preload="metadata">
+        <source src="audio/pretty-woman.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Menú de navegación responsivo -->
+    <nav class="navbar navbar-expand-xs navbar-dark menu">
+        <div class="container-fluid">
+            <a class="navbar-brand brand" href="#">
+                <img src="images/brand.png" class="img-fluid" alt="Bootstrap" width="250">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link color-navegacion fs-3" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navegacion fs-3" href="#mis-40">Mis 40</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navegacion fs-3" href="#contador">Cuenta Regresiva</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navegacion fs-3" href="#ubicacion">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-navegacion fs-3" href="#confirmacion">Confirmación</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer para evitar que el contenido se oculte detrás del navbar -->
+    <div class="spacer"></div>
+
+    <!-- Sección 1: Inicio -->
+    <section id="inicio" class="d-flex flex-column">
+        <video autoplay loop muted style="width: 100%; height: 100%;">
+            <source src="video/video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="textos">
+            <h1 class="titulos nombre mb-3 neon-morado animate__animated animate__pulse animate__infinite infinite" >Lul@ Fest</h1>
+            <h2 class="titulos display-2 mb-2 neon-morado animate__animated animate__pulse animate__infinite infinite">09 Noviembre 2024</h2>
+            <h2 class="titulos display-2 mb-2 neon-morado animate__animated animate__pulse animate__infinite infinite">¡Te invito a celebrar conmigo!</h2>
+        </div>
+    </section>
+
+    <!-- Sección 2: Mis 40 -->
+    <section id="mis-40" class="d-flex flex-column">
+        <div class="textos">
+            <p class="titulos nombre2 neon-morado animate__animated animate__pulse animate__infinite infinite">No tengo</p>
+            <p class="text-center nombre3 neon-morado animate__animated animate__pulse animate__infinite infinite">40</p>
+            <p class="titulos nombre2 neon-morado animate__animated animate__pulse animate__infinite infinite">¡Tengo 18, con 22 años de experiencia!</p>
+        </div>
+    </section>
+
+    <!-- Sección 3: Contador -->
+    <section id="contador">
+        <div class="container text-center">
+            <h2 class="titulos nombre2 neon-morado animate__animated animate__pulse animate__infinite infinite">Cuenta Regresiva</h2>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="card contador fw-bold text-white">
+                        <div class="card-body ">
+                            <h2 id="days" class="display-4">00</h2>
+                            <p>Días</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card contador fw-bold text-white">
+                        <div class="card-body">
+                            <h2 id="hours" class="display-4">00</h2>
+                            <p>Horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card contador fw-bold text-white">
+                        <div class="card-body">
+                            <h2 id="minutes" class="display-4">00</h2>
+                            <p>Minutos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card contador fw-bold text-white">
+                        <div class="card-body">
+                            <h2 id="seconds" class="display-4">00</h2>
+                            <p>Segundos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Ubicacion -->
+    <section id="ubicacion" class="neon-morado text-center animate__animated animate__pulse animate__infinite infinite">
+        <h2 class="titulos nombre2 mb-5">Ubicación</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z"></path><path d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z"></path></svg>
+        <a class="btn btn-morado my-5" href="https://maps.app.goo.gl/zWEBpXZUhwXfURZV7" role="button">Ver Mapa</a>
+    </section>
+    
+    <!-- Sección 4: Confirmacion -->
+    <section id="confirmacion" class="animate__animated mb-5">
+        <h2 class="titulos neon-morado nombre2">Confirmación</h2>
+        
+        <div class="container mt-5">
+            <h2 class="text-center">Confirmación tu Asistencia</h2>
+            <form id="confirmacion-form" class="mt-4">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" required>
+                </div>
+                <div class="mb-3">
+                    <label for="asistencia" class="form-label">¿Asistirá?</label>
+                    <select class="form-select" id="asistencia" name="asistencia" required>
+                        <option value="Sí">Sí</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="invitados" class="form-label">Número de invitados:</label>
+                    <input type="number" class="form-control" id="invitados" name="invitados" value="3" min="3" max="3" readonly>
+                </div>
+                <button type="submit" class="btn btn-morado w-100"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(37, 211, 102);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path></svg> Enviar Confirmación</button>
+            </form>
+        </div>
+
+        <script>
+            document.getElementById('confirmacion-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Evitar que se recargue la página
+        
+                // Recopilar los datos del formulario
+                var nombre = document.getElementById('nombre').value;
+                var apellido = document.getElementById('apellido').value;
+                var asistencia = document.getElementById('asistencia').value;
+                var invitados = document.getElementById('invitados').value;
+        
+                // Formatear el mensaje según la asistencia
+                let message;
+                if (asistencia.toLowerCase() === "no") {
+                    message = `👋 Hola Lul@, soy ${nombre} ${apellido}. Lamentablemente, no podré asistir al Lul@ Fest ☹️. Pásenla increible 👍`;
+                } else {
+                    message = `👋 Hola Lul@, soy ${nombre} ${apellido}. Confirmo que ${asistencia.toLowerCase()} asistiré al Lul@ Fest 🥳 con ${invitados} personas🧑‍🤝‍🧑. Allá nos vemos 🍺🍺`;
+                }
+        
+                // Número de WhatsApp al que se enviará el mensaje
+                var numeroWhatsApp = '+525535558941'; // Reemplaza con tu número de teléfono
+        
+                // Crear el enlace de WhatsApp
+                var urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(message)}`;
+        
+                // Redireccionar a WhatsApp con el mensaje
+                window.open(urlWhatsApp, '_blank');
+            });
+        </script>
+        
+    </section>
+
+    <!-- Botón flotante de volver arriba -->
+    <button id="btnVolverArriba" onclick="scrollToTop()">&#8679;</button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
